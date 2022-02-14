@@ -1,0 +1,7 @@
+echo -n "Enter the first value:"
+read a
+echo -n "Enter the second value"
+read b
+c=`expr $a + $b`
+echo "sum $a and $b is $c"
+ 
