@@ -32,7 +32,7 @@ set namfile [open out.nam w]
 
 $ns namtrace-all $namfile
 
-set group [Node allocaddr] ;#allocate a multicast address
+set group [Node allocaddr] ;#allocate a multicast addres
 
 #===================================
 
