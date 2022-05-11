@@ -1,5 +1,5 @@
 BEGIN {
-bytes_recvd=0;
+bytes_recvd = 0;
 throughput=0;
 }
 {
