@@ -1,6 +1,6 @@
 BEGIN {
 bytes_recvd = 0;
-throughput=0;
+throughput = 0;
 }
 {
 pkt_size=$6;
