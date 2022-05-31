@@ -143,8 +143,8 @@ return;
  }
 
 
-lstptr insertspc()
-{
+
+
 
 
 
