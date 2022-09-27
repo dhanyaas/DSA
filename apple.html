@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var total_amt=0;
+        function apple(){
+            var apple_qty=document.getElementById("apple_count").value;
+            var apple_amt=apple_qty*59;
+            if(document.getElementById("apple_check"))
+            total_amt +=apple_amt;
+            else 
+            total_amt -=apple_amt;
+        }
+        function banana(){
+            var banana_qty=document.getElementById("banana_count").value;
+            var banana_amt=banana_qty*59;
+            if(document.getElementById("banana_check"))
+            total_amt +=banana_amt;
+            else 
+            total_amt -=banana_amt;
+        }
+        function orange(){
+            var orange_qty=document.getElementById("orange_count").value;
+            var orange_amt=orange_qty*59;
+            if(document.getElementById("orange_check"))
+            total_amt +=orange_amt;
+            else 
+            total_amt -=orange_amt;
+        }
+        function finalamt(){
+            total_amt+=total_amt*0.05;
+            alert("your cost will be"+total_amt);
+        }
+    </script>
+</head>
+<body style="padding:200px" >
+    <center>
+    <form>
+        
+             apple(59 cents)<input type="number" id="apple_count" min="1">
+             <input type="checkbox" id="apple_check" onclick="apple();"><br>
+             banana(59 cents)<input type="number" id="banana_count" min="1">
+             <input type="checkbox" id="banana_check" onclick="banana();"><br>
+             <input type="submit" value="submit" onclick="return finalamt();"><br>
+        
+    </form>
+</center>   
+</body>
+</html>
